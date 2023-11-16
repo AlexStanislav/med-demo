@@ -1,0 +1,145 @@
+.p-menubar {
+  width: 65%;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  justify-content: right;
+  position: relative;
+}
+
+.p-menubar-start {
+  position: absolute;
+  left: 0;
+  .logo-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+  }
+  span {
+    color: #fff;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 1px 1px 2px var(--dark);
+  }
+}
+
+.p-menubar-end {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 0.5rem;
+  .p-button{
+    font-size: 1.5rem;
+  }
+}
+
+.custom-button{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.register-button{
+ background-color: var(--teal-500);
+}
+
+.login-button{
+  background-color: var(--blue-700);
+}
+
+.p-menubar-root-list {
+  margin-right: 14rem;
+  gap: 1rem;
+}
+
+.p-menuitem-text {
+  color: #fff;
+  transition: color 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.p-menuitem-content:hover,
+.router-link-active-exact,
+.p-menuitem-content:hover .p-menuitem-icon {
+  transition: all 0.3s ease;
+}
+
+.p-menuitem-content:hover,
+.router-link-active-exact,
+.p-menuitem-content:hover .p-menuitem-icon {
+  background: var(--blue-600);
+  border-radius: 4px;
+  color:#fff; 
+}
+.p-menuitem-content:hover .p-menuitem-text,
+.router-link-active-exact .p-menuitem-text,
+.router-link-active-exact .p-menuitem-icon {
+  color: #fff;
+}
+
+.p-menuitem-icon {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.p-menubar-button {
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+.p-menubar-button:hover {
+  background: var(--dark-accent);
+}
+
+.p-menubar-button:active,
+.p-menubar-button:focus {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1366px) {
+  .p-menubar{
+    width: 70%;
+  }
+  .p-menubar-root-list {
+    gap: 0.5rem;
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .p-menubar{
+    width: 90%;
+  }
+  .p-menubar-root-list {
+    gap: 0.5rem;
+  }
+  .p-menuitem-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-menuitem-text{
+    color: var(--dark);
+  }
+  .p-menubar-end {
+    display: none;
+  }
+  .p-menuitem-icon {
+    color: var(--dark);
+    transition: color 0.3s ease;
+  }
+  .p-menubar{
+    width: 95%;
+  }
+}

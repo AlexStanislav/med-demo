@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    background: var(--main);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 5px 0px rgba($color: #000000, $alpha: 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+}
+
+.header-logo {
+    left: 0;
+    top: 5px;
+    width: 40px;
+    filter: drop-shadow(1px 1px 1px var(--dark));
+}
+
+.logo-prefix,
+.logo-suffix {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 100vw;
+    }
+    .logo-prefix,
+    .logo-suffix {
+        display: none;
+    }
+}

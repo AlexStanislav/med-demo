@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --light: #F1F3F3;
+    --light-accent: #84C0D8;
+    --main: #2490eb;
+    --dark-accent: #707698;
+    --dark: #14457b;
+}
+
+html, body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f1f1f1 !important;
+}
+
+.main-app {
+    display: flex;
+    gap: 2rem;
+}
+
+.dashboard-card {
+    width: fit-content;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--blue-100);
+}
+
+.card-header h1 {
+    font-size: 2rem;
+    color: var(--main);
+    margin: 0;
+}
+
+
+
+.form-group {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+
+    .chornic-illness-description {
+        width: 100%;
+
+        .p-inputtextarea {
+            width: 100%;
+            height: 7rem;
+            resize: none;
+        }
+    }
+}

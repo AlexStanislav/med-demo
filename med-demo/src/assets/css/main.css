@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root{
+    --light: #F1F3F3;
+    --light-accent: #84C0D8;
+    --main: #2490eb;
+    --dark-accent: #707698;
+    --dark: #14457b;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}

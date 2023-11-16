@@ -1,0 +1,60 @@
+.patients-timeline {
+    position: relative;
+    margin-top: 5rem;
+    color: var(--dark);
+}
+
+.timeline-detail-left {
+    width: 15vw;
+    position: absolute;
+    left: -10%;
+    top: 10%;
+}
+
+.timeline-detail-right {
+    width: 15vw;
+    position: absolute;
+    right: -20%;
+    bottom: 0%;
+}
+
+.timeline-marker {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 1.2rem;
+        color: white;
+    }
+}
+
+.timeline-content {
+    padding: 3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-detail-left,
+    .timeline-detail-right {
+        display: none;
+    }
+    .p-timeline{
+        margin-left: -55%;
+        padding-right: 5%;
+    }
+    .timeline-marker{
+        width: 20vw;
+        height: 20vw;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .timeline-content{
+        // text-align: justify;
+        text-justify: distribute;
+    }
+    
+}
