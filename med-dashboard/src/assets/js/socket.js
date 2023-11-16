@@ -5,6 +5,6 @@ export const state = reactive({
     connected: false
 })
 
-const URL = "http://localhost:3000"
+const URL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : window.location.origin
 
 export const socket = io(URL)
